@@ -2,6 +2,7 @@
   "name": "whack-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://smittenn.github.io/whac-react",
   "dependencies": {
     "@react-three/cannon": "^4.6.1",
     "@react-three/drei": "^8.6.1",
