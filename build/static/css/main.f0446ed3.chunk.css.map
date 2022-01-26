@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA,EACE,qBACF,CAEA,gBAGE,UAAA,CACA,WAAA,CACA,QAAA,CACA,SACF,CAEA,KACE,kBACF","file":"main.f0446ed3.chunk.css","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nhtml,\nbody,\n#root {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  background: #f0f0f0;\n}"]}
