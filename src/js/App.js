@@ -37,7 +37,7 @@ function Score() {
 function Mallet() {
   const { isSwinging } = useSnapshot(state)
   const model = useRef()
-  const { nodes, materials } = useGLTF("/mallet.glb")
+  const { nodes, materials } = useGLTF("./mallet.glb")
   const [ref, api] = useBox(() => ({
     type: "Kinematic",
     args: [3.4, 1, 3.5]
@@ -75,7 +75,7 @@ function Mallet() {
  */
 function Field(props) {
   const ref = useRef()
-  const { nodes, materials } = useGLTF("/field.glb")
+  const { nodes, materials } = useGLTF("./field.glb")
   return (
     <mesh ref={ref} dispose={null} receiveShadow material={materials.Field} geometry={nodes.Field001.geometry} scale={[5, 1.5, 5]} position={[0,0,1]}/>
   )
