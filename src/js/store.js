@@ -6,13 +6,11 @@ import { proxy } from "valtio"
  */
 export const state = proxy({
   score: 0,
-  isSwingingForward: false,
-  isSwingingBackward: false,
+  isSwinging: false,
   api: {
     whac(position) {
-      state.isSwingingForward = true
-      setTimeout(() => { state.isSwingingForward = false; state.isSwingingBackward = true }, 250)
-      setTimeout(() => state.isSwingingBackward = false, 500)
+      state.isSwinging = true
+      setTimeout(() => state.isSwinging = false, 400)
       if (position.y > 1.25) {
         ++state.score
       }

@@ -9,26 +9,20 @@ import { state } from "../store"
  * The mallet that follows the mouse. When a mole is clicked the mallet swings
  */
 export default function Mallet() {
-  const { isSwingingForward, isSwingingBackward } = useSnapshot(state)
+  const { isSwinging } = useSnapshot(state)
   const { nodes, materials } = useGLTF("./mallet.glb")
   const outer = useRef()
   const inner = useRef()
   useFrame((state) => {
     inner.current.rotation.x = THREE.MathUtils.lerp(inner.current.rotation.x, 0, 0.2)
     inner.current.rotation.y = THREE.MathUtils.lerp(inner.current.rotation.y, (state.mouse.x * Math.PI) / 10, 0.2)
-    if (isSwingingForward) {
-      outer.current.rotation.x += 0.15
-      outer.current.rotation.y += 0.25
-      outer.current.rotation.z += 0.45
-    } else if (isSwingingBackward) {
-      outer.current.rotation.x -= 0.15
-      outer.current.rotation.y -= 0.25
-      outer.current.rotation.z -= 0.45
+    if (isSwinging) {
+      outer.current.rotation.set(0.15, 0.75, 1.5)
     }
     else {
       outer.current.rotation.set(0, 0, inner.current.rotation.y)
     }
-    outer.current.position.set(state.mouse.x * 10, 2.75, state.mouse.y * (state.mouse.y < 0.25 ? -30 : -5))
+    outer.current.position.set(state.mouse.x * 10, 2.75, state.mouse.y * (state.mouse.y < 0 ? -30 : -5))
   })
   return (
     <group ref={outer}>

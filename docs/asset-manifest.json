@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/whac-react/static/css/main.1c31a637.chunk.css",
-    "main.js": "/whac-react/static/js/main.49ccba37.chunk.js",
-    "main.js.map": "/whac-react/static/js/main.49ccba37.chunk.js.map",
+    "main.js": "/whac-react/static/js/main.6133baa0.chunk.js",
+    "main.js.map": "/whac-react/static/js/main.6133baa0.chunk.js.map",
     "runtime-main.js": "/whac-react/static/js/runtime-main.6e67cc50.js",
     "runtime-main.js.map": "/whac-react/static/js/runtime-main.6e67cc50.js.map",
     "static/js/2.ffd32f89.chunk.js": "/whac-react/static/js/2.ffd32f89.chunk.js",
     "static/js/2.ffd32f89.chunk.js.map": "/whac-react/static/js/2.ffd32f89.chunk.js.map",
     "index.html": "/whac-react/index.html",
-    "precache-manifest.5d2b419856ec0db3a9e2212820e7b18e.js": "/whac-react/precache-manifest.5d2b419856ec0db3a9e2212820e7b18e.js",
+    "precache-manifest.3404ac36ef80395dc6ea84d12063c1bd.js": "/whac-react/precache-manifest.3404ac36ef80395dc6ea84d12063c1bd.js",
     "service-worker.js": "/whac-react/service-worker.js",
     "static/css/main.1c31a637.chunk.css.map": "/whac-react/static/css/main.1c31a637.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.6e67cc50.js",
     "static/js/2.ffd32f89.chunk.js",
     "static/css/main.1c31a637.chunk.css",
-    "static/js/main.49ccba37.chunk.js"
+    "static/js/main.6133baa0.chunk.js"
   ]
 }
