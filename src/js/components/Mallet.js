@@ -17,18 +17,18 @@ export default function Mallet() {
     inner.current.rotation.x = THREE.MathUtils.lerp(inner.current.rotation.x, 0, 0.2)
     inner.current.rotation.y = THREE.MathUtils.lerp(inner.current.rotation.y, (state.mouse.x * Math.PI) / 10, 0.2)
     if (isSwingingForward) {
-      outer.current.rotation.x += 0.2
-      outer.current.rotation.y += 0.4
-      outer.current.rotation.z += 0.5
+      outer.current.rotation.x += 0.15
+      outer.current.rotation.y += 0.25
+      outer.current.rotation.z += 0.45
     } else if (isSwingingBackward) {
-      outer.current.rotation.x -= 0.2
-      outer.current.rotation.y -= 0.4
-      outer.current.rotation.z -= 0.5
+      outer.current.rotation.x -= 0.15
+      outer.current.rotation.y -= 0.25
+      outer.current.rotation.z -= 0.45
     }
     else {
       outer.current.rotation.set(0, 0, inner.current.rotation.y)
     }
-    outer.current.position.set(state.mouse.x * 10, 3, state.mouse.y * (state.mouse.y < 0 ? -30 : -5))
+    outer.current.position.set(state.mouse.x * 10, 2.75, state.mouse.y * (state.mouse.y < 0.25 ? -30 : -5))
   })
   return (
     <group ref={outer}>

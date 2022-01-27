@@ -11,8 +11,8 @@ export const state = proxy({
   api: {
     whac(position) {
       state.isSwingingForward = true
-      setTimeout(() => { state.isSwingingForward = false; state.isSwingingBackward = true }, 200)
-      setTimeout(() => state.isSwingingBackward = false, 400)
+      setTimeout(() => { state.isSwingingForward = false; state.isSwingingBackward = true }, 250)
+      setTimeout(() => state.isSwingingBackward = false, 500)
       if (position.y > 1.25) {
         ++state.score
       }
